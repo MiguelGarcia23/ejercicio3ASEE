@@ -1,0 +1,26 @@
+name: Ejercicio 3
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  generar-codigo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v3
+          with: 
+            java-version: '17'
+            distribution: 'temurin'
+
+      - name: Ejecutar comando Java
+        run: java -jar openapi-generator-cli.jar generate -i api.yaml -g python-flask -o ./openapi_server
+
+      - name: Ejecutar comando Zip
+        run: zip -r openapi_server.zip openapi_server
+
+      - name: Descargar fichero
+        uses: actions/upload-artifact@v4
