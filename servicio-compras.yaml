@@ -35,12 +35,12 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: 'schemas/Sale.yaml'
+                  $ref: ''
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: 'schemas/Sale.yaml'
+                  $ref: ''
         '400':
           description: Parámetro inválido
           content:
@@ -64,13 +64,13 @@ paths:
         content:
           application/json:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
           application/xml:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
           application/x-www-form-urlencoded:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
         required: true
       responses:
         '200':
@@ -78,10 +78,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
             application/xml:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
         '400':
           description: ID inválido
         '404':
@@ -105,13 +105,13 @@ paths:
         content:
           application/json:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
           application/xml:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
           application/x-www-form-urlencoded:
             schema:
-              $ref: 'schemas/Sale.yaml'
+              $ref: ''
         required: true
       responses:
         '200':
@@ -119,10 +119,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
             application/xml:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
         '400':
           description: Actualización inválida
         '422':
@@ -154,10 +154,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
             application/xml:
               schema:
-                $ref: 'schemas/Sale.yaml'
+                $ref: ''
         '400':
           description: ID inválido
         '404':
@@ -458,4 +458,5 @@ components:
     api_key:
       type: apiKey
       name: api_key
+
       in: header
