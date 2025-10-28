@@ -24,3 +24,6 @@ jobs:
 
       - name: Descargar fichero
         uses: actions/upload-artifact@v4
+        with:
+          name: openapi_server_package
+          path: openapi_server.zip
