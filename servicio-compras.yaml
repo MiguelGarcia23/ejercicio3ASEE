@@ -224,12 +224,12 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: "schemas/AccessItem.yaml"
+                  $ref: ""
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: "schemas/AccessItem.yaml"
+                  $ref: ""
         '404':
           description: Usuario no encontrado o sin compras registradas.
         default:
@@ -460,4 +460,5 @@ components:
       name: api_key
 
       in: header
+
 
