@@ -46,13 +46,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
         default:
           description: Error inesperado
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
     put:
       tags:
         - sales
@@ -93,7 +93,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
     post:
       tags:
         - sales
@@ -132,7 +132,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
   /sales/{saleId}:
     get:
       tags:
@@ -167,7 +167,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
       security:
         - api_key: []
     delete:
@@ -200,7 +200,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
   /sales/access:
     get:
       tags:
@@ -237,7 +237,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
   /sales/verifyAccess:
     get:
       tags:
@@ -285,7 +285,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
   /payment:
     post:
       tags:
@@ -364,7 +364,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
   /payment/notification:
     post:
       tags:
@@ -452,7 +452,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "schemas/Error.yaml"
+                $ref: ""
 components:
   securitySchemes:
     api_key:
@@ -460,3 +460,4 @@ components:
       name: api_key
 
       in: header
+
