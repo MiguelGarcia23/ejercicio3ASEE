@@ -12,9 +12,9 @@ jobs:
 
       - name: Configurar Java
         uses: actions/setup-java@v3
-          with: 
-            java-version: '17'
-            distribution: 'temurin'
+        with: 
+          java-version: '17'
+          distribution: 'temurin'
 
       - name: Ejecutar comando Java
         run: java -jar openapi-generator-cli.jar generate -i api.yaml -g python-flask -o ./openapi_server
